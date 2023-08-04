@@ -1,0 +1,16 @@
+<div id="container">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <h1 class="text-center mb-4">weather forecast app</h1>
+
+        <%= form_with id: 'search-form', class: 'mb-4' do |f| %>
+          <div class="input-form">
+            <%= f.text_field :city, class: 'form-control', placeholder: 'Please enter the city name in English.' %>
+            <%= f.submit 'search', class: 'btn btn-primary' %>
+          </div>
+        <% end %>
+
+      <div id="weather-display" class="text-center"></div>
+    </div>
+  </div>
+</div>
